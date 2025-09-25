@@ -39,9 +39,8 @@
 double *mA, *mB, *mC;
 
 struct timeval ini, fin;
-
+//llamado de funciones 
 void InicioMuestra();
-
 void FinMuestra();
 void iniMatriz(int n, double *m1, double *m2);
 void imprMatrices(int n, double *matriz);
