@@ -39,11 +39,11 @@
 #include "modulo.h"
 
 
-/*Funcion para tomar el tiempo inicial*/
+/*Funcion que toma el tiempo inicial*/
 void InicioMuestra(){
 	gettimeofday(&ini, (void *)0);
 }
-// Función para tomar el tiempo final y calcular el tiempo transcurrido
+// Función de tiempo final y calcular el tiempo transcurrido
 void FinMuestra(){
 	gettimeofday(&fin, (void *)0);
 	fin.tv_usec -= ini.tv_usec;
@@ -52,14 +52,14 @@ void FinMuestra(){
 	printf("%9.0f \n", tiempo);
 }
 
-// Función que inicializa las matrices
+// Función inicializa las matrices
 void iniMatriz(int n, double *m1, double *m2){
    	for(int i=0; i<n*n; i++){
 	        m1[i] = i*2.3 + 1.3;
 	        m2[i] = i*2.3;
 	}
 }
-// Función que imprimir las matrices
+// Función-> imprimir las matrices
 void imprMatrices(int n, double *matriz){
     if(n<9){
         printf("\n#######################################################\n");
@@ -71,7 +71,7 @@ void imprMatrices(int n, double *matriz){
         printf("\n#######################################################\n");
     }
 }
-// Función para multiplicar las matrices con un algoritmo clásico
+// Función que multiplica las matrices con un algoritmo clásico
 void multiMatrixClasica(double *m1, double *m2, int n){
 for(int i=0; i<n; i++){
     //  recorre filas de mA y columnas de mB
